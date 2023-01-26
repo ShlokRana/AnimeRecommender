@@ -1,11 +1,14 @@
 import streamlit as st
+import bz2file as bz2
 import pickle
 import pandas as pd
 import requests
 
-anime_dict = pickle.load(open('anime_dict.pkl', 'rb'))
+anime_dict = bz2.BZ2File('anime_dict.pkl', ‘rb’)
+anime_dict = pickle.load(anime_dict)
 anime = pd.DataFrame(anime_dict)
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = bz2.BZ2File('similarity.pkl', ‘rb’)
+similarity = pickle.load(similarity)
 
 st.title('Anime Recommender')
 selected_anime_name = st.selectbox("Select Anime", anime['animename'].values)
