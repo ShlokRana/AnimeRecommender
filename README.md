@@ -1,6 +1,6 @@
 # AnimeRecommender
 Deployed on heroku (check this link to access the website, website may be slow and take some time to open because of free deployment services)
-<a href="https://anime-recommender-shlok.herokuapp.com/" target="_blank">Anime Recommender</a>
+<a href="https://shlokrana-animerecommender-app-htkws7.streamlit.app/" target="_blank">Anime Recommender</a>
 <br></br>
 Recommend ten animes on the basis of previously watched anime.
 <br></br>
