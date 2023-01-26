@@ -4,10 +4,10 @@ import pickle
 import pandas as pd
 import requests
 
-anime_dict = bz2.BZ2File('anime_dict.pbz2', ‘rb’)
+anime_dict = bz2.BZ2File('anime_dict.pbz2', 'rb')
 anime_dict = pickle.load(anime_dict)
 anime = pd.DataFrame(anime_dict)
-similarity = bz2.BZ2File('similarity.pbz2', ‘rb’)
+similarity = bz2.BZ2File('similarity.pbz2', 'rb')
 similarity = pickle.load(similarity)
 
 st.title('Anime Recommender')
